@@ -1,0 +1,105 @@
+library(foreign)
+library(rworldmap)
+library(dplyr)
+
+states <- read.dta("D:/religstates.dta", convert.factors = FALSE)
+
+states1900 <- subset(states, year == 1900)
+gtdMap1900 <- joinCountryData2Map( states1900,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1900,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1900', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1910 <- subset(states, year == 1910)
+gtdMap1910 <- joinCountryData2Map(states1910,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1910,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1910', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1920 <- subset(states, year == 1920)
+gtdMap1920 <- joinCountryData2Map( states1920,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1920,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1920', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1930 <- subset(states, year == 1930)
+gtdMap1930 <- joinCountryData2Map( states1930,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1930,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1930', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1940 <- subset(states, year == 1940)
+gtdMap1940 <- joinCountryData2Map( states1940,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1940,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1940', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1950 <- subset(states, year == 1950)
+gtdMap1950 <- joinCountryData2Map( states1950,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1950,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1950', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1960 <- subset(states, year == 1960)
+gtdMap1960 <- joinCountryData2Map( states1960,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1960,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1960', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1970 <- subset(states, year == 1970)
+gtdMap1970 <- joinCountryData2Map( states1970,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1970,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1970', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1980 <- subset(states, year == 1980)
+gtdMap1980 <- joinCountryData2Map( states1980,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1980,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1980', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states1990 <- subset(states, year == 1990)
+gtdMap1990 <- joinCountryData2Map( states1990,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap1990,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 1990', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states2000 <- subset(states, year == 2000)
+gtdMap2000 <- joinCountryData2Map( states200,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+gtdMap2000 <- joinCountryData2Map( states2000,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap2000,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 2000', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
+states2010 <- subset(states, year == 2010)
+gtdMap2010 <- joinCountryData2Map( states2010,
+nameJoinColumn="abbrev",
+joinCode="ISO3" )
+mapCountryData( gtdMap2010,
+nameColumnToPlot='muspct',
+catMethod='fixedWidth',
+numCats=9, mapTitle='Muslim Percentage in 2010', missingCountryCol= 'white', oceanCol = 'lightblue', mapRegion =  'eurasia' )
